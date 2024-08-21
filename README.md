@@ -1,0 +1,1 @@
+En este repositorio se encuentra la carpeta con el archivo index.html, el cual contiene todo el codigo de la pagina html, y un archivo de audio .mp3 el cual es necesario tener en la misma carpeta que el index.html para poder escucharlo en la pagina sin problemas.
