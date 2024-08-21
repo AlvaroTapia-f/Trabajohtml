@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo practico HTML</title>
+    <style>
+      body {
+        width: 98%;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgb(228, 221, 212);
+      }
+      h2 {
+        text-align: center;
+      }
+      h6 {
+        color: crimson;
+        text-decoration: underline;
+      }
+      li {
+        padding: 2px;
+      }
+      nav {
+        width: 600px;
+        margin: 0 auto;
+        border-top: 2px solid rgba(128, 128, 128, 0.6);
+        border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+      }
+      .contenedor {
+        width: auto;
+      }
+      header {
+        text-align: center;
+      }
+      .imagen,
+      .video,
+      .audio {
+        text-align: center;
+        padding: 10px;
+      }
+      .tabla1,
+      .tabla2 {
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+      }
+      tfoot {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+      .formulario {
+        background-color: rgba(230, 219, 205, 0.863);
+        border-radius: 10px;
+        width: 600px;
+        margin: 0 auto;
+        border-top: 1px solid rgba(136, 145, 190, 0.658);
+        padding: 10px;
+      }
+      .form-titl {
+        text-align: center;
+      }
+      .form-1,
+      .form-2 {
+        display: inline-block;
+        padding-inline: 20px;
+        padding-block: 15px;
+      }
+      .form-3 {
+        padding: 15px;
+      }
+      .form-4 {
+        padding: 15px;
+      }
+      .form-5 {
+        padding: 15px;
+      }
+      .form-6 {
+        padding: 15px;
+      }
+      .form-7 {
+        padding: 15px;
+      }
+      .form-boton {
+        padding: 15px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(128, 128, 128, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <h1>Encabezado Principal</h1>
+      </header>
+      <main>
+        <nav>
+          <ul>
+            <li>
+              <a href="#seccion1">Primera sección</a>
+            </li>
+            <li>
+              <a href="#seccion2">Segunda sección</a>
+            </li>
+            <li>
+              <a href="#seccion3">Tercera sección</a>
+            </li>
+            <br />
+            Si quiere aprender más sobre html puede visitar el
+            <a href="https://www.w3schools.com/html/" target="_blank">
+              sitio web
+            </a>
+          </ul>
+        </nav>
+        <div class="seccion1" id="seccion1">
+          <section>
+            <h2>Primera sección</h2>
+            <p>
+              En esta primera sección se mostrarán algunas propiedades de texto,
+              algunos encabezados, listas y la separación de una sección en
+              varios artículos.
+            </p>
+          </section>
+          <article>
+            <h3>Primer artículo</h3>
+            <p>
+              Este es el primer artículo de la página, donde se muestran algunas
+              <b>propiedades de texto</b>:
+            </p>
+            <ul>
+              <li><b>Texto en negrita</b></li>
+              <li><em>Texto en cursiva</em></li>
+              <li><u>Texto subrayado</u></li>
+            </ul>
+          </article>
+          <article>
+            <h3>Segundo Artículo</h3>
+            <p>En este artículo se muestran dos tipos de listas:</p>
+            <h4>Lista Ordenadas</h4>
+            <ol>
+              <li>Ítem 1 de una lista ordenada</li>
+              <li>Ítem 2 de una lista ordenada</li>
+            </ol>
+            <h4>Lista desordenada</h4>
+            <ul>
+              <li>Ítem de una lista desordenada</li>
+              <li>Otro ítem de una lista desordenada</li>
+            </ul>
+          </article>
+        </div>
+        <div class="seccion2" id="seccion2">
+          <section>
+            <h2>Segunda sección</h2>
+            <p>
+              En esta segunda sección se mostrarán temas referidos a los
+              elementos multimedia y tablas.
+            </p>
+          </section>
+          <article>
+            <h3>Primer artículo</h3>
+            <p>En este articulos veremos los elementos multimedia</p>
+            <div class="multimedia">
+              <div class="imagen">
+                <h5><em>Imagen</em></h5>
+                <img
+                  src="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg"
+                  alt="Imagen HTML"
+                  width="600px"
+                />
+              </div>
+              <div class="video">
+                <h5>Video</h5>
+                <video width="600px" controls>
+                  <source
+                    src="https://cdn.pixabay.com/video/2023/10/01/183107-870151708_large.mp4"
+                  />
+                  Video html
+                </video>
+              </div>
+              <div class="audio">
+                <h5>Audio</h5>
+                <audio controls>
+                  <source src="AudioEjemplo.mp3" type="audio/mp3" />
+                  Audio
+                </audio>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h3>Segundo artículo</h3>
+            <p>Ahora se mostrarán unas tablas de ejemplo</p>
+            <div class="tablas">
+              <div class="tabla1">
+                <h6>Tabla 1</h6>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>COLUMNA 1</th>
+                      <th>COLUMNA 2</th>
+                      <th>COLUMNA 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dato 1</td>
+                      <td>Dato 2</td>
+                      <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                      <td>Dato 4</td>
+                      <td>Dato 5</td>
+                      <td>Dato 6</td>
+                    </tr>
+                    <tr>
+                      <td>Dato 7</td>
+                      <td>Dato 8</td>
+                      <td>Dato 9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="tabla2">
+                <h6>Tabla 2</h6>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>COLUMNA 1</th>
+                      <th>COLUMNA 2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dato 1</td>
+                      <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                      <td>Dato 3</td>
+                      <td>Dato 4</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>resultado 1</td>
+                      <td>Resultado 2</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="seccion3" id="seccion3">
+          <section class="sec-formulario">
+            <h2>Tercera sección</h2>
+            <p>
+              En la tercera y última sección de este documento se a realizar un
+              formulario
+            </p>
+          </section>
+          <article>
+            <div class="formulario">
+              <div class="form-titl">
+                <h2>Formulario</h2>
+                <p>Ingrese los datos solicitados a continuación</p>
+              </div>
+              <form action="" method="post">
+                <div class="form-1">
+                  <label for="nombre">Nombre: </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required
+                  />
+                </div>
+                <div class="form-2">
+                  <label for="apellido">Apellido: </label>
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required
+                  />
+                </div>
+                <div class="form-3">
+                  <label for="email">Correo electrónico: </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-4">
+                  <label for="pass">Contraseña: </label>
+                  <input
+                    type="password"
+                    id="pass"
+                    name="pass"
+                    placeholder="Ingrese una contraseña"
+                    required
+                  />
+                </div>
+                <div class="form-5">
+                  <label for="fechaNacimiento">Fecha de nacimiento: </label>
+                  <input
+                    type="date"
+                    id="fechaNacimiento"
+                    name="fechaNacimiento"
+                    required
+                  />
+                </div>
+                <div class="form-6">
+                  <label for="genero">Género: </label>
+                  <select name="genero" id="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-7">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+                </div>
+                <div class="form-boton">
+                  <input type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>Trabajo práctico HTML 2024. Tapia Alvaro</p>
+    </footer>
+  </body>
+</html>
